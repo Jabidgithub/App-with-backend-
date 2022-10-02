@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303627114664",
+    "project_id": "whatsapp-backend-edeaf",
+    "storage_bucket": "whatsapp-backend-edeaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303627114664:android:5acea060968d5cad6d8a9d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_whatsapp_with_backend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303627114664-9lc2vubnstqb9kch6ssb5ho6qoit2mid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLkzI-mUKDhT35a-qP9zA3Zfh4q38o5Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303627114664-9lc2vubnstqb9kch6ssb5ho6qoit2mid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
