@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/colors.dart';
 
 class SenderMessageCard extends StatelessWidget {
-  const SenderMessageCard({
-    Key? key,
-    required this.message,
-    required this.date,
-  }) : super(key: key);
+  const SenderMessageCard({Key? key, required this.message, required this.date})
+      : super(key: key);
   final String message;
   final String date;
 

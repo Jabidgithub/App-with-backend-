@@ -26,7 +26,7 @@ class MobileLayoutScreen extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.search, color: Colors.grey),
               onPressed: () {},
-            ),
+            ),  
             IconButton(
               icon: const Icon(Icons.more_vert, color: Colors.grey),
               onPressed: () {},
