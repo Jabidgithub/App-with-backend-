@@ -55,6 +55,15 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo Library Use</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera Library Use</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Mic Use</string>
+	<key>NSContactsUsageDescription</key>
+     <string>Contact list to chat</string>
+
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
