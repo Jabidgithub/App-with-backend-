@@ -4,7 +4,7 @@ import 'package:flutter_contacts/flutter_contacts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_ui/common/utils/utils.dart';
 import 'package:whatsapp_ui/model/user_model.dart';
-import 'package:whatsapp_ui/screens/mobile_chat_screen.dart';
+import 'package:whatsapp_ui/features/chat/screens/mobile_chat_screen.dart';
 
 final selectContactsRepositoryProvider = Provider(
   (ref) => SelectContactRepository(
@@ -48,12 +48,7 @@ class SelectContactRepository {
               '',
             );
 
-        // print('selectedPhoneNum');
-        // print(selectedPhoneNum);
-        // print('userData');
-        // print(userData.phoneNumber);
-
-        // await Future.delayed(Duration(seconds: 60));
+        await Future.delayed(Duration(seconds: 60));
 
         if (selectedPhoneNum == userData.phoneNumber) {
           isFound = true;

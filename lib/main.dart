@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +21,18 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  ///////////////////
+
+  try {
+    final result = await InternetAddress.lookup('example.com');
+    if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+      print('connected');
+    }
+  } on SocketException catch (_) {
+    print('not connected');
+  }
+  /////////////////
   runApp(
     const ProviderScope(
       child: MyApp(),
@@ -46,16 +60,15 @@ class MyApp extends ConsumerWidget {
               if (user == null) {
                 return const LandingScreen();
               }
-              return MobileLayoutScreen();
+              return const MobileLayoutScreen();
             },
-            error: ((error, Trace) {
-              return ErrorScreen(error: error.toString());
-            }),
+            error: (err, trace) {
+              return ErrorScreen(
+                error: err.toString(),
+              );
+            },
             loading: () => const Loader(),
           ),
     );
-  }
+  } 
 }
-
-
-// Navigator
