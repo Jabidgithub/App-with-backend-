@@ -47,7 +47,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Whatsapp UI',
+      title: 'Messenger UI',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
         appBarTheme: const AppBarTheme(
@@ -70,5 +70,5 @@ class MyApp extends ConsumerWidget {
             loading: () => const Loader(),
           ),
     );
-  } 
+  }
 }

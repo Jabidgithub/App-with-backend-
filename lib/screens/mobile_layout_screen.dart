@@ -52,7 +52,7 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
           backgroundColor: appBarColor,
           centerTitle: false,
           title: const Text(
-            'WhatsApp',
+            'Messenger',
             style: TextStyle(
               fontSize: 20,
               color: Colors.grey,
@@ -81,12 +81,12 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
               Tab(
                 text: 'CHATS',
               ),
-              Tab(
-                text: 'STATUS',
-              ),
-              Tab(
-                text: 'CALLS',
-              ),
+              // Tab(
+              //   text: 'STATUS',
+              // ),
+              // Tab(
+              //   text: 'CALLS',
+              // ),
             ],
           ),
         ),

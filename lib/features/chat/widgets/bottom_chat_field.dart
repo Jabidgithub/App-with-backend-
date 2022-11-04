@@ -220,5 +220,3 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
     );
   }
 }
-
-// showSnackBar

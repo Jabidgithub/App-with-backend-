@@ -39,13 +39,15 @@ class ChatController {
   void sendTextMessage(
       BuildContext context, String text, String recieverUserId) {
     ref.read(userDataAuthProvider).whenData(
-          (value) => chatRepository.sendTextMessage(
-            context: context,
-            text: text,
-            recieverUserId: recieverUserId,
-            senderUser: value!,
-          ),
+      (value) {
+        chatRepository.sendTextMessage(
+          context: context,
+          text: text,
+          recieverUserId: recieverUserId,
+          senderUser: value!,
         );
+      },
+    );
   }
 
   void sendFileMessage(
