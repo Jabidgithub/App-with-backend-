@@ -5,8 +5,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_ui/colors.dart';
+import 'package:whatsapp_ui/common/providers/message_replay_provider.dart';
 import 'package:whatsapp_ui/common/utils/utils.dart';
 import 'package:whatsapp_ui/features/chat/controller/chat_controller.dart';
+import 'package:whatsapp_ui/features/chat/widgets/message_replay_preview.dart';
 import 'package:whatsapp_ui/features/enums/message_emun.dart';
 
 class BottomChatField extends ConsumerStatefulWidget {
@@ -98,8 +100,12 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
 
   @override
   Widget build(BuildContext context) {
+    final MessageReply = ref.watch(messageReplyProvider);
+    final isShowMessageReply = MessageReply != null;
+
     return Column(
       children: [
+        isShowMessageReply ? const MessageReplayPreview() : const SizedBox(),
         Row(
           children: [
             Expanded(
